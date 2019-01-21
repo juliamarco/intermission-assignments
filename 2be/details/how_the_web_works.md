@@ -15,15 +15,22 @@ Review the materials below.
 Now we have a better grasp about the internet, and how some of the things are working. Now, let's answer a few questions to check our understanding. Don't be afraid to do additional research (googleing) for an answer. Fork this gist and answer the following questions:
 
 1. Describe, step by step, what happens when I type `www.example.com` into my browser and try to go to the page?
+ First the browser checks its cache, as it  maintains a repository of DNS records for a fixed duration for websites you have previously visited. It also checks the Operating system, the router and the ISP cache. 
+ If the requested URL is not in the cache, ISP’s DNS server initiates a DNS query to find the IP address. Once the browser receives the correct IP address it will build a connection with the server that matches IP address to transfer information.
+ Then the browser sends an HTTP request to the web server and the server handles the request and sends back a response. The server response contains a representation of the web page you requested (HTML content), that the browser will display.
+
 1.  What does HTTP stand for?
+HyperText Transfer Protocol
+
 1. 	What protocol does the World Wide Web use?
+HTTP
+
 1. 	Each computer on the Internet is assigned an IP address, what does IP stand for?
+Internet Protocol
+
 1. 	What does DNS stand for?
   * A. Domain Name System
-  * B. Digital Number System
-  * C. Domain Number System
-  * D. Domain Name Service
-  * E. Digital Name Service
+
 1. 	How are text domain names matched to their respective numeric IP addresses.
 1. 	What is the client?
   * A. A purchaser
